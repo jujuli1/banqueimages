@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from 'react';
 
+
 const Certif = () => {
     const [photos, setPhotos] = useState([]); // État pour stocker les photos
-    const [error, setError] = useState(null); // État pour gérer les erreurs
+    const [error, setError] = useState(null); 
 
     useEffect(() => {
         // Récupérer les données des photos depuis le backend
@@ -22,8 +23,16 @@ const Certif = () => {
         fetchPhotos();
     }, []);
 
+
+
+
+
+
     return (
         <div>
+
+
+              
             <h1>Certifications</h1>
             {error && <p style={{ color: 'red' }}>{error}</p>}
             <div style={{ display: 'flex', flexWrap: 'wrap', gap: '10px' }}>
